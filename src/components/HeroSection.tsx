@@ -17,16 +17,17 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-screen w-full overflow-hidden bg-black">
       {/* Background Image with Blur on Scroll */}
       <motion.div
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 flex items-center justify-center"
         style={{
           filter: useTransform(blurValue, (v) => `blur(${v}px)`),
         }}
       >
+        {/* Desktop: zoomed out with black side panels, Mobile/Tablet: cover */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat lg:bg-contain"
           style={{ backgroundImage: `url(${heroBg})` }}
         />
         {/* Subtle dark overlay */}
