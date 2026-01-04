@@ -6,15 +6,13 @@ export function useLenis() {
 
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 2.2,
+      duration: 1.8,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       orientation: "vertical",
       gestureOrientation: "vertical",
       smoothWheel: true,
       wheelMultiplier: 0.8,
-      touchMultiplier: 0.5,
-      syncTouch: true,
-      syncTouchLerp: 0.04,
+      touchMultiplier: 1.5,
     });
 
     lenisRef.current = lenis;
