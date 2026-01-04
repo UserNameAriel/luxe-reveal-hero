@@ -1,6 +1,9 @@
 import { HeroSection } from "@/components/HeroSection";
+import { useLenis } from "@/hooks/use-lenis";
 
 const Index = () => {
+  useLenis();
+
   return (
     <main className="bg-black">
       <HeroSection />
