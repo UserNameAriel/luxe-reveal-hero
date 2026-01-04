@@ -87,10 +87,10 @@ export function HeroSection() {
         }}
       >
         <RevealText
-          text="DISCOVER  ME"
+          text="DISCOVER   ME"
           textColor="text-white/90"
           overlayColor="text-white"
-          fontSize="text-[8vw] md:text-[10vw] lg:text-[12vw]"
+          fontSize="text-[12vw] md:text-[10vw] lg:text-[12vw]"
           letterDelay={0.06}
           overlayDelay={0.04}
           overlayDuration={0.5}
