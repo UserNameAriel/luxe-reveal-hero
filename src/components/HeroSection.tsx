@@ -87,7 +87,7 @@ export function HeroSection() {
         }}
       >
         <RevealText
-          text="DISCOVER ME"
+          text="DISCOVER  ME"
           textColor="text-white/90"
           overlayColor="text-white"
           fontSize="text-[8vw] md:text-[10vw] lg:text-[12vw]"
